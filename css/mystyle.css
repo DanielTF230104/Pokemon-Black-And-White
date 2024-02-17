@@ -1,0 +1,72 @@
+/*********************************************************************************/
+
+
+
+/********************************* fonts *****************************************/
+
+@font-face {
+      font-family: POKEMON BLANCO-POKEMON NEGRO ;
+      src: url(../font/FontsFree-Net-Proxima-Nova-Bold.otf);
+    }
+    
+    @font-face {
+      font-family: textonormal;
+      src: url(../font/OpenSans-Regular.ttf);
+    }
+
+/******************************** sizing *****************************************/
+.w-8 {width: 8%;}
+.mb-8{margin-bottom: 8em;}
+.form-text { visibility:hidden;}
+      
+/******************************** colors *****************************************/
+
+.carousel-caption{background-color: rgba(128, 128, 128, 0.492);}
+#trigger {cursor: pointer;}
+#trigger:hover {cursor: pointer;}
+
+#intro{background-color: white;
+      Width:100%;         
+      margin:auto;
+      color: black;}
+
+#region{background-color: black;
+        Width:100%;         
+        margin:auto;
+        color: white;}
+
+#pokemon{background-color: black;
+         Width:100%;         
+         margin:auto;
+         color: white;}
+
+.bd-navbar::after {position: absolute;
+                   inset: 0;
+                   z-index: -1;
+                   display: block;
+                   content: "";
+                   background-image: linear-gradient(rgba(var(--bd-violet-rgb), 1), rgba(var(--bd-violet-rgb), 0.95));}
+
+*, ::after, ::before {box-sizing: border-box;}
+
+/*********************************** img *****************************************/
+
+@media only screen and (width<760px) {       /*********** TABLET **************/
+      #wrapper {width: 90%;}
+      .grid-4 {grid-template-columns: auto auto;}
+      #hero {background-image: url(../img/imagenhs.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size:cover;
+            position:relative;}
+      }
+      @media only screen and (width>900px){        /************ COMPUTER ************/
+      
+      #wrapper {width: 100%;}
+      
+      #hero {
+        background-image: url(../img/pokemonbn.webp);
+        height: 100vh;
+        background-size: cover;  
+      }
+      }
